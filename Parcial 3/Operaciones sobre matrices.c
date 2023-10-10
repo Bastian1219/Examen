@@ -12,7 +12,7 @@ int main() {
     	printf("2. Suma de matrices\n");
     	printf("3. Multiplicacion de matrices\n");
     	printf("4. Diagonal\n");
-    	printf("5. Suma del triángulo superior\n");
+    	printf("5. Suma del triangulo superior\n");
     	printf("6. Terminar\n");
         scanf("%d", &z);
 
@@ -111,12 +111,13 @@ int main() {
                 }
                 printf("\n");
             }
-        } else if (z == 3) { // Multiplicación de matrices
+        } 
+		else if (z == 3) // Multiplicación de matrices
+		{ 
             srand(time(NULL));
             printf("Ingrese la longitud de las matrices: ");
             scanf("%d", &n);
             int A[n][n], B[n][n], C[n][n];
-
             printf("Matriz A:\n");
             for (i = 0; i < n; i++) 
 			{
@@ -214,7 +215,6 @@ int main() {
         } 
 		
     } while (z != 6);
-
     return 0;
 }
 
